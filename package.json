@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "start:lambda": "netlify-lambda serve functions/api",
-    "generate": "netlify-lambda build functions/api/book && nuxt generate"
+    "generate": "netlify-lambda build functions/api/ && nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
