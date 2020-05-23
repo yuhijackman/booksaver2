@@ -1,22 +1,18 @@
 # Booksaver
 
-> Calculate how much money you wasted on books you have never read.
+A visual reminder of how much unread books on your bookshelf are worth and helps you stop letting books pile up unread.
 
-## Build Setup
+# Why I made this.
+I felt like I need something that motivates me to pick up unfinished books on my bookshelf once again, when I saw tons of books on my bookshelf.
+And I noticed many of the books aren't read through to the end.
 
-```bash
-# install dependencies
-$ yarn install
+I believe that I'm not the only person who has started dozens of books and never finished them.
+So I decided to create this app.
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# LINK
+https://brave-chandrasekhar-d3acfd.netlify.app/
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+# Demo account
+You can try it out with this account.
+Email: demo@gmail.com
+Password: Demoaccount
