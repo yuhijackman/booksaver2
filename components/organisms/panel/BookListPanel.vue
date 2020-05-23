@@ -34,7 +34,7 @@
                         >
                             <BookCard
                                 v-for="book in unreadBooks"
-                                :key="book.name"
+                                :key="book.id"
                                 :book="book"
                                 @change="changeStatus"
                                 class="mr-2"
@@ -60,7 +60,7 @@
                         >
                             <BookCard
                                 v-for="book in readBooks"
-                                :key="book.name"
+                                :key="book.id"
                                 :book="book"
                                 @change="changeStatus"
                                 class="mr-2"

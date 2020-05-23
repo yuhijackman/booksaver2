@@ -32,12 +32,19 @@ export const getters = {
     },
     getMyBooksByStatus: state => status => {
         const myBooks = state.authUser.myBooks
-        const filteredBooks = Object.keys(myBooks).reduce((obj, key) => {
-                if (myBooks[key]["status"] == status) {
-                    obj[key] = myBooks[key]
-                }
-                return obj
-            }, {});
+        const filteredBooks = Object.keys(myBooks).reduce((ary, key) => {
+            if (myBooks[key]["status"] == status) {
+                ary.push(myBooks[key])
+            }
+            return ary
+        }, []);
+        filteredBooks.sort((a, b) => {
+            if (a.title > b.title) {
+                return 1;
+            } else {
+                return -1;
+            }
+        })
         return filteredBooks
     },
     getBookById: state => id => {

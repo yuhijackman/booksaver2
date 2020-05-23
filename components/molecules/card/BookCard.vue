@@ -27,7 +27,8 @@
                 </div>
                 <div class="book-card__item--detail book-card__item--detail--bottom">
                     <v-switch
-                        :input-value="book.status === 'read'"
+                        :id="book.id"
+                        :input-value="switchValue"
                         @change="onChange"
                         :label="`${book.status}`"
                     ></v-switch>
@@ -52,7 +53,9 @@ export default {
         BookThumbnail
     },
     computed: {
-  
+        switchValue () {
+            return this.book.status === 'read'
+        },
     },
     methods: {
         onChange() {
