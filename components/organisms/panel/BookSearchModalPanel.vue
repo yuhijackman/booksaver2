@@ -173,7 +173,7 @@ export default {
         async searchBooks (keyword) {
             if (this.isLoading) return
             this.isLoading = true
-            this.$axios.$get('/api/search/index.xml/', {
+            this.$axios.$get('./.netlify/functions/book', {
                 params: { 
                     q: keyword,
                     key: process.env.GOODREADS_API_KEY

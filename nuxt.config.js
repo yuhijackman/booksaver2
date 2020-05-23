@@ -100,9 +100,9 @@ module.exports = {
   },
 
   proxy: {
-    '/api':{
-      target: "https://www.goodreads.com",
-      pathRewrite: { '^/api': '' }
+    '/.netlify':{
+      target: 'http://localhost:9000',
+      pathRewrite: { '^/.netlify/functions': '' }
     }
   },
 
